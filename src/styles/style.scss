@@ -1,4 +1,29 @@
-.test {
-  color: red;
+@import "./colors";
+
+body {
   font-family: var(--roboto-default);
+}
+
+.light {
+  background-color: beige;
+  color: black;
+}
+
+.dark {
+  color: rgba(255, 255, 255, 0.92);
+  background-color: $dark-bg-color;
+  nav {
+    text-decoration: underline;
+  }
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  div {
+    max-width: 768px;
+    padding: 0.5rem;
+  }
 }

@@ -1,8 +1,6 @@
-import "./globals.css";
-import { Inter } from "next/font/google";
-import { roboto_mono } from "./fonts";
-
-const inter = Inter({ subsets: ["latin"] });
+import ThemeProvider from "@/components/ThemeProvider";
+import App from "@/components/App";
+import "../styles/style.scss";
 
 export const metadata = {
   title: "Create Next App",
@@ -16,9 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${roboto_mono.variable} ${inter.className}`}>
-        {children}
-      </body>
+      <ThemeProvider>
+        <App>{children}</App>
+      </ThemeProvider>
     </html>
   );
 }

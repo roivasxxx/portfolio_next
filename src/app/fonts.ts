@@ -1,12 +1,13 @@
-import { Inter, Roboto_Mono } from "next/font/google";
+import { Inter, Roboto_Mono } from "@next/font/google";
 
 export const inter = Inter({
   subsets: ["latin"],
-  display: "swap"
+  display: "swap",
 });
 
 export const roboto_mono = Roboto_Mono({
   subsets: ["latin"],
   display: "swap",
-  variable: "--roboto-default"
+  variable: "--roboto-default",
+  preload:true
 });

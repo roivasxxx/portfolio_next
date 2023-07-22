@@ -14,6 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <title>Patrik Pahulák</title>
+      </head>
       <ThemeProvider>
         <App>{children}</App>
       </ThemeProvider>

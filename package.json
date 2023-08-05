@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev | pino-pretty -m message -i time -c",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -16,12 +16,14 @@
     "eslint": "8.42.0",
     "eslint-config-next": "13.1.6",
     "next": "13.1.6",
+    "pino": "^8.14.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "three": "^0.153.0",
     "typescript": "5.1.3"
   },
   "devDependencies": {
+    "pino-pretty": "^10.1.0",
     "sass": "^1.62.1"
   }
 }
